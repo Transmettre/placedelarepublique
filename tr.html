@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anıt – Türkçe</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,30 +21,39 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
-
-    p {
+    .label {
       color: #718096;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     audio {
       width: 100%;
       margin-bottom: 30px;
     }
-
+    /* Sesli rehber metni: sola hizalı ve okunaklı */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
     .btn-back {
       display: inline-block;
       text-decoration: none;
@@ -57,41 +64,36 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
-
     .btn-back:hover {
       background: #5a67d8;
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>Şehir anıtı</h1>
     <h2>Türkçe</h2>
-
-    <p>Sesli rehber:</p>
-
+    <p class="label">Sesli rehber:</p>
     <audio controls>
       <source src="TR_REPUBLIQUE.mp3" type="audio/mpeg">
       Tarayıcınız ses dosyalarını desteklemiyor.
     </audio>
-<p>1870 Şehitler Anıtı, Soissons şehir merkezinin güneyinde önemli bir kavşak noktası olan Cumhuriyet Meydanı'nda yer almaktadır.
 
- </br>1901 yılında halkın bağışlarıyla dikilen anıt, Bakan Georges Leygues tarafından açılmıştır. Anıt, Eylül ve Ekim 1870 tarihleri arasında Fransız-Prusya Savaşı sırasında Soissons kuşatmasının kurbanlarını anmaktadır.
+    <div class="audioguide">
+      <p>1870 Şehitler Anıtı, Soissons şehir merkezinin güneyinde önemli bir kavşak noktası olan Cumhuriyet Meydanı'nda yer almaktadır.</p>
 
- </br>Heykeltıraş Louis Auguste Hiolin tarafından taş ve bronzdan yapılan anıt, surların yıkılması veya hastanenin yanması gibi kuşatmanın birkaç önemli sahnesini tasvir etmektedir. Yaralı bir topçu figürü, savaşçıların fedakarlığını hatırlatmaktadır.
+      <p>1901 yılında halkın bağışlarıyla dikilen anıt, Bakan Georges Leygues tarafından açılmıştır. Anıt, Eylül ve Ekim 1870 tarihleri arasında Fransız-Prusya Savaşı sırasında Soissons kuşatmasının kurbanlarını anmaktadır.</p>
 
- </br>Merkezde, büyük bir kadın figürü, yenilginin ve anının sembolü olan yas tutan Cumhuriyeti temsil etmektedir. Anıtın tepesinde, kanatlı bir cini, umut meşalesi ve kırılmış zincirleri taşıyan Özgürlüğü temsil etmektedir.
+      <p>Heykeltıraş Louis Auguste Hiolin tarafından taş ve bronzdan yapılan anıt, surların yıkılması veya hastanenin yanması gibi kuşatmanın birkaç önemli sahnesini tasvir etmektedir. Yaralı bir topçu figürü, savaşçıların fedakarlığını hatırlatmaktadır.</p>
 
-  </br>Birkaç yazıt, askerlere, kurbanlara ve yerel şahsiyetlere, özellikle de çatışma sırasında kurşuna dizilen üç öğretmene saygı duruşunda bulunmaktadır.
+      <p>Merkezde, büyük bir kadın figürü, yenilginin ve anının sembolü olan yas tutan Cumhuriyeti temsil etmektedir. Anıtın tepesinde, kanatlı bir cin, umut meşalesi ve kırılmış zincirleri taşıyan Özgürlüğü temsil etmektedir.</p>
 
-Bu anıt, bugün hala 1870 savaşının Soissons'da bıraktığı travmayı yansıtmaktadır.
-</p>
+      <p>Birkaç yazıt, askerlere, kurbanlara ve yerel şahsiyetlere, özellikle de çatışma sırasında kurşuna dizilen üç öğretmene saygı duruşunda bulunmaktadır.</p>
+
+      <p>Bu anıt, bugün hâlâ 1870 savaşının Soissons'da bıraktığı travmayı yansıtmaktadır.</p>
+    </div>
+
     <a href="index.html" class="btn-back">← Resepsiyona dön</a>
-
   </div>
-
 </body>
 </html>
