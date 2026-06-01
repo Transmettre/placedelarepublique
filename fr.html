@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monument – Français</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,18 +21,82 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
+    .label {
+      color: #718096;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    /* Texte de l'audioguide : aligné à gauche et lisible */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
+    .btn-back {
+      display: inline-block;
+      text-decoration: none;
+      background: #667eea;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .btn-back:hover {
+      background: #5a67d8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Monument de la ville</h1>
+    <h2>Français</h2>
+    <p class="label">Audioguide :</p>
+    <audio controls>
+      <source src="audio/es.mp3" type="audio/mpeg">
+      Le navigateur ne supporte pas le lecteur.
+    </audio>
+
+    <div class="audioguide">
+      <p>Le monument aux morts de 1870 se dresse place de la République, un carrefour important au sud du centre-ville de Soissons.</p>
+
+      <p>Érigé en 1901 grâce à des souscriptions publiques, il a été inauguré par le ministre Georges Leygues. Il rend hommage aux victimes du siège de Soissons pendant la guerre franco-prussienne, entre septembre et octobre 1870.</p>
+
+      <p>Réalisé en pierre et en bronze par le sculpteur Louis Auguste Hiolin, le monument présente plusieurs scènes marquantes du siège, comme la destruction des remparts ou l’incendie de l’hôpital. Une figure d’artilleur blessé rappelle le sacrifice des combattants.</p>
+
+      <p>Au centre, une grande figure féminine incarne la République en deuil, symbole de la défaite et du souvenir. Au sommet, un génie ailé représente la Liberté, portant un flambeau d’espoir et des chaînes brisées.</p>
+
+      <p>Plusieurs inscriptions rendent hommage aux soldats, aux victimes et à des figures locales, notamment trois instituteurs fusillés pendant le conflit.</p>
+
+      <p>Ce monument témoigne encore aujourd’hui du traumatisme laissé par la guerre de 1870 à Soissons.</p>
+    </div>
+
+    <a href="index.html" class="btn-back">← Revenir à l'accueil</a>
+  </div>
+</body>
+</html>    }
 
     p {
       color: #718096;
