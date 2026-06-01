@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monument – English</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,30 +21,39 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
-
-    p {
+    .label {
       color: #718096;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     audio {
       width: 100%;
       margin-bottom: 30px;
     }
-
+    /* Audioguide text: left-aligned and readable */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
     .btn-back {
       display: inline-block;
       text-decoration: none;
@@ -57,38 +64,36 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
-
     .btn-back:hover {
       background: #5a67d8;
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>City monument</h1>
     <h2>English</h2>
-
-    <p>Audioguide:</p>
-
+    <p class="label">Audioguide:</p>
     <audio controls>
       <source src="EN_REPUBLIQUE.mp3" type="audio/mpeg">
       Your browser does not support audio.
     </audio>
 
-    <p>The 1870 war memorial stands on Place de la République, a major crossroads south of Soissons city center.
-  </br></br>Erected in 1901 through public subscriptions, it was inaugurated by the minister Georges Leygues. It pays tribute to the victims of the siege of Soissons during the Franco-Prussian War, between September and October 1870.
-</br></br>Made of stone and bronze by the sculptor Louis Auguste Hiolin, the monument features several striking scenes from the siege, such as the destruction of the ramparts and the burning of the hospital. A figure of a wounded artilleryman recalls the sacrifice of the combatants.
-</br></br>At the center, a large female figure embodies the mourning Republic, symbolizing defeat and remembrance. At the top, a winged figure represents Liberty, holding a torch of hope and broken chains.
-</br></br>Several inscriptions pay tribute to soldiers, victims, and local figures, including three schoolteachers who were executed during the conflict.
-</br></br>This monument still bears witness today to the trauma left by the 1870 war in Soissons.
-</p>
+    <div class="audioguide">
+      <p>The 1870 war memorial stands on Place de la République, a major crossroads south of Soissons city center.</p>
 
-    <a href="index.html" class="btn-back">← Return to the homepage.</a>
+      <p>Erected in 1901 through public subscriptions, it was inaugurated by the minister Georges Leygues. It pays tribute to the victims of the siege of Soissons during the Franco-Prussian War, between September and October 1870.</p>
 
+      <p>Made of stone and bronze by the sculptor Louis Auguste Hiolin, the monument features several striking scenes from the siege, such as the destruction of the ramparts and the burning of the hospital. A figure of a wounded artilleryman recalls the sacrifice of the combatants.</p>
+
+      <p>At the center, a large female figure embodies the mourning Republic, symbolizing defeat and remembrance. At the top, a winged figure represents Liberty, holding a torch of hope and broken chains.</p>
+
+      <p>Several inscriptions pay tribute to soldiers, victims, and local figures, including three schoolteachers who were executed during the conflict.</p>
+
+      <p>This monument still bears witness today to the trauma left by the 1870 war in Soissons.</p>
+    </div>
+
+    <a href="index.html" class="btn-back">← Return to the homepage</a>
   </div>
-
 </body>
 </html>
